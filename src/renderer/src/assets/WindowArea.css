@@ -1,0 +1,15 @@
+.window {
+    min-width: 0;             /* stops content (e.g. video) from stretching a cell */
+    min-height: 0;
+    background: var(--surface);
+    border-radius: 4px;
+}
+
+.windowArea {
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    grid-auto-rows: 1fr;      /* rows share the height equally */
+    gap: 8px;
+    height: 100%;
+    width: 100%;
+}

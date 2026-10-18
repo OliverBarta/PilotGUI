@@ -1,0 +1,114 @@
+.topBar {
+	background: var(--surface);
+	margin-bottom: 8px;
+	padding: 0 8px 0 20px;
+	border-radius: 4px;
+	height: 44px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+/* Layout helpers */
+
+.group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.spacer {
+	flex: 1;
+}
+
+.divider {
+	width: 1px;
+	height: 20px;
+	background: var(--divider);
+}
+
+/* Text */
+
+.label {
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+}
+
+.value {
+	font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--text);
+}
+
+.clock {
+	min-width: 80px;
+}
+
+.icon {
+	display: flex;
+	color: var(--text-muted);
+}
+
+/* Buttons */
+
+.iconButton,
+.windowButton {
+	width: 32px;
+	height: 32px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.windowButton {
+	font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.active {
+	background: var(--surface-raised);
+}
+
+.power {
+	background: var(--danger);
+}
+
+.power:hover {
+	background: #a81515;
+}
+
+/* Sections */
+
+.windows {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.windows .label {
+	margin-right: 8px;
+}
+
+.position {
+	display: flex;
+	align-items: baseline;
+	gap: 20px;
+}
+
+.axis {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}

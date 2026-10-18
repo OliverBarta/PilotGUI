@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: system-ui, sans-serif;
+}
+
+:root {
+  --text: white;
+
+  /* Backgrounds */
+  --bg: black;
+  --surface: #313131;/* top bar, panel bodies */
+  --surface-raised: #5c5c5c;/* panel headers, active/selected button */
+  --divider: #4a4a4a;/* vertical separators in the top bar */
+  --highlight: #626262;/* brightest grey, e.g. hover */
+
+  /* Text */
+  --text-muted: #b4b4b4;/* small labels (WINDOWS, Mbps, x/y/z) */
+  --text-placeholder: #a8a8a8; /* [CAMERA FEED] placeholders */
+
+  /* Accents */
+  --danger: #d21f1f;/* power/kill button */
+  --record: #ff5a4f;/* record indicator dot */
+}
+
+P {
+  color: var(--text);
+  font-size: 14px;
+}
+
+button {
+  all: unset;
+  color: var(--text);
+  font-size: 14px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: var(--highlight);
+}
+
+.appOuterDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
